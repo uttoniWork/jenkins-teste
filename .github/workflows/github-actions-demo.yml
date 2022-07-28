@@ -15,4 +15,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: sh "${gradle} clean build -x test"
+      - name: Build with Gradle
+        run: ./gradlew build
