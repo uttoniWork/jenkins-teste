@@ -17,3 +17,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Build with Gradle
         run: ./gradlew build
+      - name: Run tests
+        run: ./gradlew build test
